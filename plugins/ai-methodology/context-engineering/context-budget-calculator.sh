@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Context Budget Calculator
 #
 # Measures the always-on token cost of your CLAUDE.md configuration.

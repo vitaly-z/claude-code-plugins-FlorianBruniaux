@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Hook: PreToolUse - Detect prompt injection attempts
 # Exit 0 = allow, Exit 2 = block (stderr message shown to Claude)
 #
@@ -110,7 +110,7 @@ DELIMITER_PATTERNS=(
     "### System:"
     "### Human:"
     "### Assistant:"
-    "```system"
+    '```system'
     "SYSTEM:"
 )
 

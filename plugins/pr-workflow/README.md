@@ -4,7 +4,7 @@ PR and issue lifecycle for Claude Code — structured planning (CEO + Eng gates)
 
 ## What's included
 
-**Commands (9)**: `/pr`, `/review-pr`, `/plan-start`, `/plan-ceo-review`, `/plan-eng-review`, `/plan-execute`, `/plan-validate`, `/review-plan`, handoff commands (create/resume/update)
+**Commands (11)**: `/pr`, `/review-pr`, `/plan-start`, `/plan-ceo-review`, `/plan-eng-review`, `/plan-execute`, `/plan-validate`, `/review-plan`, handoff commands (create/resume/update)
 
 **Agents (3)**: planner, planning-coordinator, plan-challenger
 

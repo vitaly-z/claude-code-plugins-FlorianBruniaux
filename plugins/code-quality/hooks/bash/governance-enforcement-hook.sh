@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # governance-enforcement-hook.sh
 # Event: SessionStart
 #

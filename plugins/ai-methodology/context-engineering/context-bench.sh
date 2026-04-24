@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Context Engineering Benchmark
 #
 # Measures the impact of structural metadata files (code-map.yaml) on

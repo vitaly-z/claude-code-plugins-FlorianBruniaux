@@ -4,7 +4,10 @@
       {
         "matcher": "Bash",
         "hooks": [
-          { "type": "command", "command": "bash hooks/bash/validate-changes.sh" }
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/validate-changes.sh\""
+          }
         ]
       }
     ],
@@ -12,8 +15,14 @@
       {
         "matcher": "Write|Edit",
         "hooks": [
-          { "type": "command", "command": "bash hooks/bash/output-validator.sh" },
-          { "type": "command", "command": "bash hooks/bash/governance-enforcement-hook.sh" }
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/output-validator.sh\""
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/governance-enforcement-hook.sh\""
+          }
         ]
       }
     ]

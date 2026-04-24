@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Hook: PostToolUse - Validate Claude's outputs for quality issues
 # Exit 0 = allow (always), but emit systemMessage warnings
 #

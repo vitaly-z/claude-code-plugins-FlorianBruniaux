@@ -8,7 +8,8 @@ Session analytics dashboard for Claude Code. Displays a comprehensive summary wi
 |---------|---------|-------------|
 | Meta | on | Session ID, name, git branch |
 | Duration | on | Wall time, active time, turns, exit reason |
-| Models | on | Requests per model, tokens in/out, cache hit rate |
+| Models | on | Requests per model, tokens in/out |
+| Cache | on | Cache hit rate (read vs created tokens) |
 | Cost | on | Estimated cost (via ccusage or pricing table fallback) |
 | Tools | on | Tool calls breakdown with success/error rates |
 | Errors | on | Error details (tool name + truncated message) |

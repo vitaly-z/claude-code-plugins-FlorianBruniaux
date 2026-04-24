@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/usr/bin/env bash
 #
 # File: tts-selective.sh
 # Purpose: Selective TTS hook - Speak only specific types of messages

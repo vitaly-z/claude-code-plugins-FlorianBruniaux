@@ -4,6 +4,7 @@ description: "Wrap high-verbosity shell commands with RTK to reduce token consum
 version: 1.0.0
 tags: [optimization, tokens, efficiency, git]
 effort: low
+allowed-tools: "Bash"
 ---
 
 # RTK Optimizer Skill

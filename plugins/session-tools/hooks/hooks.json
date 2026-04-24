@@ -4,13 +4,19 @@
       {
         "matcher": "Bash",
         "hooks": [
-          { "type": "command", "command": "bash hooks/bash/rtk-baseline.sh" }
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/rtk-baseline.sh\""
+          }
         ]
       },
       {
         "matcher": ".*",
         "hooks": [
-          { "type": "command", "command": "bash hooks/bash/identity-reinjection.sh" }
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/identity-reinjection.sh\""
+          }
         ]
       }
     ],
@@ -18,31 +24,55 @@
       {
         "matcher": "Bash",
         "hooks": [
-          { "type": "command", "command": "bash hooks/bash/smart-suggest.sh" },
-          { "type": "command", "command": "bash hooks/bash/rtk-auto-wrapper.sh" }
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/smart-suggest.sh\""
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/rtk-auto-wrapper.sh\""
+          }
         ]
       },
       {
         "matcher": ".*",
         "hooks": [
-          { "type": "command", "command": "bash hooks/bash/learning-capture.sh" }
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/learning-capture.sh\""
+          }
         ]
       }
     ],
     "SubagentStop": [
       {
         "hooks": [
-          { "type": "command", "command": "bash hooks/bash/subagent-stop.sh" }
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/subagent-stop.sh\""
+          }
         ]
       }
     ],
     "Stop": [
       {
         "hooks": [
-          { "type": "command", "command": "bash hooks/bash/session-summary.sh" },
-          { "type": "command", "command": "bash hooks/bash/session-logger.sh" },
-          { "type": "command", "command": "bash hooks/bash/auto-rename-session.sh" },
-          { "type": "command", "command": "bash hooks/bash/tts-selective.sh" }
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/session-summary.sh\""
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/session-logger.sh\""
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/auto-rename-session.sh\""
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/bash/tts-selective.sh\""
+          }
         ]
       }
     ]

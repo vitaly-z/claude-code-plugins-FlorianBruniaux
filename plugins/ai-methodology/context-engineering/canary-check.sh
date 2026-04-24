@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Context Engineering Canary Check
 #
 # Runs structural validation tests against your CLAUDE.md configuration.

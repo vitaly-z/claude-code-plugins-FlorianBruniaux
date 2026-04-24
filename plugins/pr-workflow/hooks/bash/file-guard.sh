@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # .claude/hooks/file-guard.sh
 # Event: PreToolUse
 # Unified file protection with pattern matching and bash bypass detection
