@@ -4,7 +4,7 @@ AI-assisted development methodology for Claude Code — scaffolding skills, 6-st
 
 ## What's included
 
-**Commands (4)**: `/methodology-advisor`, `/scaffold`, `/audit-codebase`, `/audit-agents-skills`
+**Commands (5)**: `/methodology-advisor`, `/scaffold`, `/audit-codebase`, `/audit-agents-skills`, `/spec-completeness-audit`
 
 **Agents (2)**: adr-writer, report-template
 
