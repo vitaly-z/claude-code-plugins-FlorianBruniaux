@@ -1,13 +1,11 @@
 ---
 name: cyber-defense-team
 description: "Orchestrate a 4-agent cyber defense pipeline to analyze log files for threats. Use when investigating security logs, detecting anomalies in access patterns, classifying breach severity, or generating incident reports from nginx/auth/syslog files."
-version: 1.0.0
-usage: /cyber-defense-team [log-file-path]
-args:
-  - name: log_path
-    description: Path to the log file to analyze (or paste log content directly)
-    required: true
+allowed-tools: Read Bash
+argument-hint: "[log-file-path]"
 effort: high
+metadata:
+  version: 1.0.0
 ---
 
 # Cyber Defense Team Skill
@@ -17,15 +15,15 @@ Orchestrate a 4-agent pipeline that analyzes log files for security threats and 
 ## Pipeline Architecture
 
 ```
-[You] → Team Lead (this skill)
-           │
-           ├─[1]─→ log-ingestor    (haiku)  → cyber-defense-events.json
-           │
-           ├─[2]─→ anomaly-detector (sonnet) → cyber-defense-anomalies.json
-           │                                    (reads events.json)
-           ├─[3]─→ risk-classifier  (sonnet) → cyber-defense-risk.json
-           │                                    (reads anomalies.json)
-           └─[4]─→ threat-reporter  (sonnet) → cyber-defense-report.md
+[You] -> Team Lead (this skill)
+           |
+           |-[1]-> log-ingestor    (haiku)  -> cyber-defense-events.json
+           |
+           |-[2]-> anomaly-detector (sonnet) -> cyber-defense-anomalies.json
+           |                                    (reads events.json)
+           |-[3]-> risk-classifier  (sonnet) -> cyber-defense-risk.json
+           |                                    (reads anomalies.json)
+           `-[4]-> threat-reporter  (sonnet) -> cyber-defense-report.md
                                                (reads all 3 JSON files)
 ```
 
@@ -33,11 +31,11 @@ Stages 2 and 3 are sequential (each depends on previous output). Stage 4 runs af
 
 ## Execution Steps
 
-### Step 1 — Validate Input
+### Step 1: Validate Input
 
-Check that the log file exists (or that log content was provided inline). If the path doesn't exist, tell the user immediately — don't proceed.
+Check that the log file exists (or that log content was provided inline). If the path doesn't exist, tell the user immediately and don't proceed.
 
-### Step 2 — Spawn Log Ingestor
+### Step 2: Spawn Log Ingestor
 
 Use the Agent tool to spawn the `log-ingestor` agent:
 
@@ -48,7 +46,7 @@ Log path: [log_path]
 
 Wait for completion. Confirm `cyber-defense-events.json` was created.
 
-### Step 3 — Spawn Anomaly Detector
+### Step 3: Spawn Anomaly Detector
 
 Use the Agent tool to spawn the `anomaly-detector` agent:
 
@@ -58,7 +56,7 @@ Task: Read cyber-defense-events.json and detect anomalies. Write results to cybe
 
 Wait for completion. If `anomalies_found: 0`, skip to Step 5 (reporter still runs).
 
-### Step 4 — Spawn Risk Classifier
+### Step 4: Spawn Risk Classifier
 
 Use the Agent tool to spawn the `risk-classifier` agent:
 
@@ -66,7 +64,7 @@ Use the Agent tool to spawn the `risk-classifier` agent:
 Task: Read cyber-defense-anomalies.json and classify overall risk. Write result to cyber-defense-risk.json.
 ```
 
-### Step 5 — Spawn Threat Reporter
+### Step 5: Spawn Threat Reporter
 
 Use the Agent tool to spawn the `threat-reporter` agent:
 
@@ -74,12 +72,12 @@ Use the Agent tool to spawn the `threat-reporter` agent:
 Task: Read cyber-defense-events.json, cyber-defense-anomalies.json, and cyber-defense-risk.json. Generate a complete incident report and save it to cyber-defense-report.md.
 ```
 
-### Step 6 — Summarize for User
+### Step 6: Summarize for User
 
 Read `cyber-defense-risk.json` and present:
 
 ```
-✅ Analysis complete
+Analysis complete
 
 Risk Level : HIGH
 Score      : 74/100

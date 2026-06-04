@@ -1,9 +1,8 @@
 ---
 name: landing-page-generator
 description: "Generate complete, deploy-ready landing pages from any repository. Use when creating a homepage for an open-source project, building a project website, converting a README into a marketing page, or standardizing landing pages across multiple repos."
-tags: [landing-page, static-site, github-pages, marketing]
+allowed-tools: Read Bash Write
 effort: medium
-allowed-tools: "Read, Write, Bash"
 ---
 
 # Landing Page Generator
