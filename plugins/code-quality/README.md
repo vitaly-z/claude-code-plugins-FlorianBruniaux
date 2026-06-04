@@ -1,6 +1,6 @@
 # code-quality
 
-Code quality pipeline for Claude Code — SOLID refactoring, TDD workflow, GoF design patterns, performance optimization, and 6 specialist review agents.
+Code quality pipeline for Claude Code: SOLID refactoring, TDD workflow, GoF design patterns, performance optimization, and 6 specialist review agents.
 
 ## What's included
 
@@ -8,7 +8,7 @@ Code quality pipeline for Claude Code — SOLID refactoring, TDD workflow, GoF d
 
 **Commands (8)**: `/refactor`, `/optimize`, `/generate-tests`, `/explain`, `/review-plan`, `/qa`, `/investigate`, `/sonarqube`
 
-**Skills (5)**: design-patterns (GoF reference + checklists), eval-skills, tdd-workflow, smart-explore, ast-grep-patterns
+**Skills (10)**: validate-changes, audit-codebase, check-cache-bugs, recipe-template, diagnose, design-patterns (GoF reference + checklists), eval-skills, tdd-workflow, smart-explore, ast-grep-patterns
 
 **Hooks (3)**: output-validator, governance-enforcement-hook, validate-changes
 

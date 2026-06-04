@@ -1,6 +1,6 @@
 # pr-workflow
 
-PR and issue lifecycle for Claude Code — structured planning (CEO + Eng gates), PR creation, code review, issue and PR triage, session handoffs.
+PR and issue lifecycle for Claude Code: structured planning (CEO + Eng gates), PR creation, code review, issue and PR triage, session handoffs.
 
 ## What's included
 
@@ -8,7 +8,7 @@ PR and issue lifecycle for Claude Code — structured planning (CEO + Eng gates)
 
 **Agents (3)**: planner, planning-coordinator, plan-challenger
 
-**Skills (2)**: pr-triage (4-phase PR review), issue-triage (3-phase backlog management)
+**Skills (5)**: plan-pipeline, review-plan, review-pr, pr-triage (4-phase PR review), issue-triage (3-phase backlog management)
 
 **Hooks (2)**: file-guard, velocity-governor
 

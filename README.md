@@ -1,6 +1,6 @@
 # Claude Code Plugins
 
-Production-ready plugins for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) from the [Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide). 181 templates across 8 focused plugins.
+Production-ready plugins for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) from the [Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide). 212 templates across 8 focused plugins.
 
 ## StarMapper
 
@@ -8,7 +8,7 @@ Production-ready plugins for [Claude Code](https://docs.anthropic.com/en/docs/cl
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://starmapper.bruniaux.com/api/map-image/FlorianBruniaux/claude-code-plugins?theme=dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://starmapper.bruniaux.com/api/map-image/FlorianBruniaux/claude-code-plugins?theme=light" />
-    <img alt="StarMapper — see who stars this repo on a world map" src="https://starmapper.bruniaux.com/api/map-image/FlorianBruniaux/claude-code-plugins" />
+    <img alt="StarMapper: see who stars this repo on a world map" src="https://starmapper.bruniaux.com/api/map-image/FlorianBruniaux/claude-code-plugins" />
   </picture>
 </a>
 
@@ -36,13 +36,13 @@ That's it. Hooks are auto-wired, no manual configuration needed.
 | Plugin | Description | Templates | Version |
 |--------|-------------|-----------|---------|
 | [security-suite](./plugins/security-suite/) | OWASP auditing, cyber-defense pipeline, 13 protective hooks | 29 | 1.0.0 |
-| [devops-pipeline](./plugins/devops-pipeline/) | CI/CD, git worktrees, deploy automation, GitHub Actions | 40+ | 1.0.0 |
+| [devops-pipeline](./plugins/devops-pipeline/) | CI/CD, git worktrees, deploy automation, GitHub Actions | 50+ | 1.0.0 |
 | [release-automation](./plugins/release-automation/) | Changelog, release notes (3 formats), social content | 20+ | 1.0.0 |
-| [code-quality](./plugins/code-quality/) | SOLID refactoring, TDD, GoF patterns, 6 review agents | 25 | 1.0.0 |
-| [pr-workflow](./plugins/pr-workflow/) | Planning gates, PR/issue triage, handoffs | 20 | 1.0.0 |
-| [session-tools](./plugins/session-tools/) | ccboard monitoring, voice refinement, 11 session hooks | 35+ | 1.0.0 |
-| [ai-methodology](./plugins/ai-methodology/) | Scaffolding, 6-stage talk pipeline, context-engineering | 40+ | 1.0.0 |
-| [session-summary](./plugins/session-summary/) | Session analytics dashboard — 15 configurable sections | 1 | 3.0.0 |
+| [code-quality](./plugins/code-quality/) | SOLID refactoring, TDD, GoF patterns, 6 review agents | 30 | 1.0.0 |
+| [pr-workflow](./plugins/pr-workflow/) | Planning gates, PR/issue triage, handoffs | 23 | 1.0.0 |
+| [session-tools](./plugins/session-tools/) | ccboard monitoring, voice refinement, 11 session hooks | 40+ | 1.0.0 |
+| [ai-methodology](./plugins/ai-methodology/) | Scaffolding, 6-stage talk pipeline, context-engineering | 45+ | 1.0.0 |
+| [session-summary](./plugins/session-summary/) | Session analytics dashboard, 15 configurable sections | 1 | 3.0.0 |
 
 ## Plugin Details
 
@@ -100,7 +100,7 @@ Full PR lifecycle from idea to merged. CEO + Engineering planning gates enforce 
 
 ### session-tools
 
-Session productivity toolkit — cost/token monitoring dashboard (ccboard), voice memo refinement, context restoration after `/clear`, and MCP integration templates.
+Session productivity toolkit: cost/token monitoring dashboard (ccboard), voice memo refinement, context restoration after `/clear`, and MCP integration templates.
 
 **Commands**: `/catchup`, `/session-save`, `/diagnose`, `/routines-discover`, `/autoresearch`
 
@@ -158,10 +158,10 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on adding new plugins.
 
 ## License
 
-MIT — See [LICENSE](./LICENSE)
+MIT. See [LICENSE](./LICENSE)
 
 ## Links
 
-- [Claude Code Ultimate Guide](https://cc.bruniaux.com) — Full documentation
-- [Ultimate Guide GitHub](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) — Source repo
-- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code) — Official Anthropic docs
+- [Claude Code Ultimate Guide](https://cc.bruniaux.com): Full documentation
+- [Ultimate Guide GitHub](https://github.com/FlorianBruniaux/claude-code-ultimate-guide): Source repo
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code): Official Anthropic docs
