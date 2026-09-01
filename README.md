@@ -168,6 +168,20 @@ claude plugin marketplace remove florian-claude-tools
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on adding new plugins.
 
+<!-- BEGIN GENERATED RELATED PROJECTS -->
+<!-- Source: https://github.com/FlorianBruniaux/FlorianBruniaux/blob/main/ecosystem/projects.json; project: claude-code-plugins -->
+## Explore the ecosystem
+
+These projects extend the workflow without duplicating this tool:
+
+- **Learn with [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)**: the guide explains the decisions and trade-offs behind the installable templates.
+- **Observe with [CCBoard](https://github.com/FlorianBruniaux/ccboard)**: the session-tools plugin already connects Claude Code workflows to CCBoard.
+- **Optimize with [RTK](https://github.com/rtk-ai/rtk)**: the session-tools plugin already provides an RTK integration.
+- **Validate with [ctxharness](https://github.com/FlorianBruniaux/ctxharness)**: check that installed instructions remain aligned with the codebase.
+
+[Browse the complete open-source galaxy](https://github.com/FlorianBruniaux#open-source-galaxy)
+<!-- END GENERATED RELATED PROJECTS -->
+
 ## License
 
 MIT. See [LICENSE](./LICENSE)
